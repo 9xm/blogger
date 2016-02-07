@@ -25,13 +25,8 @@
 <link
 	href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
 	rel='stylesheet' />
+<link href='http://fonts.googleapis.com/css?family=family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
 
-
-<!-- Main Style -->
-<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-
-<!-- Responsive Style -->
-<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
 
 <!-- Custom Fonts -->
 <link
@@ -40,12 +35,10 @@
 
 
 <!-- Extras -->
-<link rel="stylesheet" type="text/css" href="assets/extras/animate.css" />
-<link rel="stylesheet" type="text/css" href="assets/extras/lightbox.css" />
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/css/animate.css" />
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/css/lightbox.css" />
 
 
-<!-- jQuery Load -->
-<script src="assets/js/jquery-min.js"></script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
@@ -61,8 +54,293 @@
 		 * Theme URL      : 
 		 * License        : GNU General Public License v2 or later
 		 **/]]>
+		 
 </b:skin>
+<style>
+/*!=Main
+-------------*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+a {
+  color: #e74c3c;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+a:hover {
+  color: #e76c3c;
+}
+.row {
+  padding: 80px 0px;
+}
+.btn {
+  border: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.btn-common {
+  background: #3d566e;
+  color: #fff;
+}
+.btn-common:hover {
+  background: #e74c3c;
+  color: #fff;
+}
 
+.title {
+  text-align: center;
+  font-size: 50px;
+}
+.subtitle {
+  text-align: center;
+  font-weight: 100;
+  padding-bottom: 30px;
+  position: relative;
+  color: #bdc3c7;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar li {
+  color: #d1d1d1;
+}
+.navbar-default {
+  border: none;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: none;
+  color: #fff;
+}
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:hover {
+  color: #fff;
+}
+.navbar-default .navbar-nav > .active,
+.navbar-default .navbar-nav li:hover {
+  background: #e74c3c;
+  padding-bottom: 5px;
+  color: #fff;
+}
+.navbar-default .navbar-brand {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 100;
+}
+.navbar-default .navbar-brand:hover {
+  color: #eee;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #fff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: #333;
+}
+.affix.navbar-default {
+  background: rgba(0, 0, 0, 0.8);
+}
+#hero-area {
+  background: #34495e;
+  color: #fff;
+}
+#hero-area .btn {
+  margin-right: 20px;
+}
+#hero-area img {
+  max-width: 100%;
+}
+#hero-area p {
+  padding: 50px 0;
+}
+#services h3 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #e74c3c;
+}
+/*Portfolio*/
+#portfolio {
+  background: #f1f1f1;
+}
+/*Portfolio Overlay */
+.portfolio-item {
+  position: relative;
+  margin-bottom: 15px;
+}
+.portfolio-item img {
+  width: 100%;
+}
+.portfolio-item .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.portfolio-item:hover .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+}
+.portfolio-item .icons .preview {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  color: #fff;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.portfolio-item .icons .preview i {
+  color: #e74c3c;
+}
+#clients {
+  background: #fff;
+}
+#about {
+  background: #34495e;
+  color: #fff;
+}
+#about p {
+  line-height: 30px;
+  font-size: 17px;
+}
+#contact {
+  background: #f1f1f1;
+}
+#contact ::-webkit-input-placeholder {
+  color: #ecf0f1;
+}
+#contact :-moz-placeholder {
+  color: #ecf0f1;
+}
+#contact ::-moz-placeholder {
+  color: #ecf0f1;
+}
+#contact :-ms-input-placeholder {
+  color: #ecf0f1;
+}
+#contact .social i {
+  color: #fff;
+  padding: 10px;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  background: #34495e;
+}
+#contact .social .social-links a:hover {
+  color: #fff;
+}
+#contact .social .fa-facebook:hover {
+  background: #3b5998;
+  color: #fff;
+}
+#contact .social .fa-twitter:hover {
+  background: #00CAFB;
+  color: #fff;
+}
+#contact .social .fa-google-plus:hover {
+  background: #D23A1D;
+  color: #fff;
+}
+#contact .social .fa-linkedin:hover {
+  background: #007bb6;
+  color: #fff;
+}
+#contact .social .fa-dribbble:hover {
+  background: #ea4c89;
+  color: #fff;
+}
+#contact .social .fa-github:hover {
+  background: #171515;
+  color: #fff;
+}
+#contact .contact-info {
+  margin: 40px 0;
+}
+#contact .contact-info p {
+  font-size: 20px;
+}
+#contact .contact-form .form-control {
+  box-shadow: none;
+  font-size: 17px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: none;
+}
+
+/*Scroll Top*/
+.to-top i {
+  padding: 10px 15px;
+  margin: 10px;
+  background: transparent;
+  color: #34495e;
+  border: 2px solid #34495e;
+}
+.to-top i:hover {
+  background: #34495e;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#copyright {
+  background: #F1F1F1;
+  color: #333;
+}
+#copyright a {
+  color: #333;
+}
+/*=Responsive
+-------------------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+#hero-area .btn{margin-top: 15px;}
+
+  .nav > li > a {
+    padding: 12px 8px;
+    line-height: 21px;
+  }
+  .social-links{padding-top: 15px;}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #hero-area .btn{margin-top: 15px;}
+  .navbar-default{background: rgba(0, 0, 0, 0.8);}
+  .social-links{padding-top: 15px;}
+  .row {padding: 40px 0px;}
+
+}
+</style>
 </head>
 
 <body data-spy="scroll" data-offset="20" data-target="#navbar">
@@ -114,7 +392,7 @@
 					<h2 class="subtitle">Boost your business logic 9xM times!</h2>
 
 					<img class="col-md-6 col-sm-6 col-xs-12 animated fadeInLeft"
-						src="assets/images/macbook.png" alt="" />
+						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/macbook.png" alt="" />
 					<div
 						class="col-md-6 col-sm-6 col-xs-12 animated fadeInRight delay-0-5">
 						<p>9xM is a premier software developer group offers software
@@ -147,7 +425,7 @@
 
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div class="service-item">
-						<img src="assets/images/responsive.png" alt="" />
+						<img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/responsive.png" alt="" />
 						<h3>WordPress Development</h3>
 						<p>WordPress is a unique platform that can be easily altered
 							for any need and requirements. You can anticipate premier quality
@@ -158,7 +436,7 @@
 
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div class="service-item">
-						<img src="assets/images/bs3.png" alt="" />
+						<img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/bs3.png" alt="" />
 						<h3>Plugin Development</h3>
 						<p>Plugin developers are highly innovative and armed with the
 							latest technology and trends and ensure you to execute all these
@@ -168,7 +446,7 @@
 
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div class="service-item">
-						<img src="assets/images/free.png" alt="" />
+						<img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/free.png" alt="" />
 						<h3>100% Free Support</h3>
 						<p>We offer free 60 days extended support on Wordpress Themes
 							&amp; Plugins also provide help doc of WordPress administrator
@@ -192,10 +470,10 @@
 				<h2 class="subtitle">Collection of 9xM highway</h2>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-						<a href="#"><img src="assets/images/img1.jpg" alt="" /></a>
+						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.jpg" alt="" /></a>
 						<div class="overlay">
 							<div class="icons">
-								<a data-lightbox="image1" href="assets/images/img1.jpg"
+								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.jpg"
 									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
 							</div>
 						</div>
@@ -205,10 +483,10 @@
 
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="portfolio-item wow fadeInLeft" data-wow-delay=".7s">
-						<a href="#"><img src="assets/images/img2.jpg" alt="" /></a>
+						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.jpg" alt="" /></a>
 						<div class="overlay">
 							<div class="icons">
-								<a data-lightbox="image1" href="assets/images/img2.jpg"
+								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.jpg"
 									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
 							</div>
 						</div>
@@ -217,10 +495,10 @@
 
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="portfolio-item wow fadeInLeft" data-wow-delay=".9s">
-						<a href="#"><img src="assets/images/img3.jpg" alt="" /></a>
+						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img3.jpg" alt="" /></a>
 						<div class="overlay">
 							<div class="icons">
-								<a data-lightbox="image1" href="assets/images//img3.jpg"
+								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images//img3.jpg"
 									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
 							</div>
 						</div>
@@ -230,10 +508,10 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight"
 					data-wow-delay="1.1s">
 					<div class="portfolio-item">
-						<a href="#"><img src="assets/images/img4.jpg" alt="" /></a>
+						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img4.jpg" alt="" /></a>
 						<div class="overlay">
 							<div class="icons">
-								<a data-lightbox="image1" href="assets/images/img4.jpg"
+								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img4.jpg"
 									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
 							</div>
 						</div>
@@ -243,10 +521,10 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight"
 					data-wow-delay="1.3s">
 					<div class="portfolio-item">
-						<a href="#"><img src="assets/images/img5.jpg" alt="" /></a>
+						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img5.jpg" alt="" /></a>
 						<div class="overlay">
 							<div class="icons">
-								<a data-lightbox="image1" href="assets/images/img5.jpg"
+								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img5.jpg"
 									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
 							</div>
 						</div>
@@ -256,10 +534,10 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight"
 					data-wow-delay="1.5s">
 					<div class="portfolio-item">
-						<a href="#"><img src="assets/images/img6.jpg" alt="" /></a>
+						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img6.jpg" alt="" /></a>
 						<div class="overlay">
 							<div class="icons">
-								<a data-lightbox="image1" href="assets/images/img6.jpg"
+								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img6.jpg"
 									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
 							</div>
 						</div>
@@ -278,17 +556,17 @@
 			<div class="row">
 
 				<h1 class="title">Clients</h1>
-				<h2 class="subtitle">Lorem Ipsum is simply dummy text</h2>
+				<h2 class="subtitle">Our rich experience with gold client</h2>
 
 				<div class="wow fadeInDown">
 					<img class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="assets/images/img1.png" alt="client-1" /><img
+						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.png" alt="client-1" /><img
 						class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="assets/images/img2.png" alt="client-2" /><img
+						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.png" alt="client-2" /><img
 						class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="assets/images/img3.png" alt="client-3" /><img
+						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img3.png" alt="client-3" /><img
 						class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="assets/img/clients/img4.png" alt="client-4" />
+						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/img/clients/img4.png" alt="client-4" />
 				</div>
 			</div>
 		</div>
@@ -318,7 +596,7 @@
 				</div>
 
 				<img class="col-md-4 col-md-4 col-sm-12 col-xs-12"
-					src="assets/images/graph.png" alt="" />
+					src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/graph.png" alt="" />
 			</div>
 		</div>
 	</section>
@@ -332,7 +610,7 @@
 			<div class="row">
 				<h1 class="title">Contact us</h1>
 
-				<h2 class="subtitle">Our Rich Experience</h2>
+				<h2 class="subtitle"> We stand head and shoulders above the rest</h2>
 
 
 				<form role="form" class="contact-form" method="post">
@@ -410,16 +688,17 @@
 	</div>
 	<!-- Copyright Section End-->
 
-	<!-- Bootstrap JS -->
-	<script src="assets/js/bootstrap.min.js"></script>
-
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 	<!-- Smooth Scroll -->
 	<!-- Smooth Scroll -->
-	<script src="assets/js/smooth-scroll.js"></script>
-	<script src="assets/js/lightbox.min.js"></script>
+	<script src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/smooth-scroll.js"></script>
+	<script src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/lightbox.min.js"></script>
 
 	<!-- All JS plugin Triggers -->
-	<script src="assets/js/main.js"></script>
+	<script src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/main.js"></script>
 
 
 
