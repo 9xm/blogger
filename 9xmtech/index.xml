@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html expr:dir='data:blog.languageDirection' lang='en-US'
-	xmlns='http://www.w3.org/1999/xhtml'
-	xmlns:b='http://www.google.com/2005/gml/b'
-	xmlns:data='http://www.google.com/2005/gml/data'
-	xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html expr:dir='data:blog.languageDirection' lang='en-US' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<b:include data='blog' name='all-head-content' />
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<b:include data='blog' name='all-head-content'/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
-	<title><data:blog.pageTitle /></title>
-	<b:else />
+	<title><data:blog.pageTitle/></title>
+	<b:else/>
 	<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-		<title><data:blog.pageName /> ~ <data:blog.title /></title>
-		<b:else />
+		<title><data:blog.pageName/> ~ <data:blog.title/></title>
+		<b:else/>
 		<title>404 ~ Page Not Found!</title>
 	</b:if>
 </b:if>
@@ -22,21 +18,17 @@
 
 
 <!-- Bootstrap Core CSS -->
-<link
-	href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
-	rel='stylesheet' />
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
 <link href='http://fonts.googleapis.com/css?family=family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
 
 
 <!-- Custom Fonts -->
-<link
-	href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
-	rel='stylesheet' />
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'/>
 
 
 <!-- Extras -->
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/css/animate.css" />
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/css/lightbox.css" />
+<link href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/css/animate.css' rel='stylesheet' type='text/css'/>
+<link href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/css/lightbox.css' rel='stylesheet' type='text/css'/>
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,22 +37,22 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-<b:skin>
-	<![CDATA[
+<b:skin><![CDATA[
+	
 		/*! 
 		 * Template Name  : 9xm
 		 * Author         : 9xm team
 		 * Author URL     : http://9xmtech.blogspot.in
 		 * Theme URL      : 
 		 * License        : GNU General Public License v2 or later
-		 **/]]>
+		 **/
 		 
-</b:skin>
+]]></b:skin>
 <style>
 /*!=Main
 -------------*/
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: &#39;Montserrat&#39;, sans-serif;
   font-size: 14px;
   font-weight: 400;
   -webkit-box-sizing: border-box;
@@ -123,9 +115,9 @@ a:hover {
   border-radius: 0;
   background: rgba(0, 0, 0, 0.2);
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav &gt; .active &gt; a,
+.navbar-default .navbar-nav &gt; .active &gt; a:hover,
+.navbar-default .navbar-nav &gt; .active &gt; a:focus {
   background: none;
   color: #fff;
 }
@@ -133,7 +125,7 @@ a:hover {
 .navbar-default .navbar-nav li a:hover {
   color: #fff;
 }
-.navbar-default .navbar-nav > .active,
+.navbar-default .navbar-nav &gt; .active,
 .navbar-default .navbar-nav li:hover {
   background: #e74c3c;
   padding-bottom: 5px;
@@ -326,7 +318,7 @@ a:hover {
 
 #hero-area .btn{margin-top: 15px;}
 
-  .nav > li > a {
+  .nav &gt; li &gt; a {
     padding: 12px 8px;
     line-height: 21px;
   }
@@ -343,37 +335,32 @@ a:hover {
 </style>
 </head>
 
-<body data-spy="scroll" data-offset="20" data-target="#navbar">
-	<b:section id="main"></b:section>
+<body data-offset='20' data-spy='scroll' data-target='#navbar'>
+	<b:section id='main'/>
 	<!-- Nav Menu Section -->
-	<div class="logo-menu">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation"
-			data-spy="affix" data-offset-top="50">
-			<div class="container">
+	<div class='logo-menu'>
+		<nav class='navbar navbar-default navbar-fixed-top' data-offset-top='50' data-spy='affix' role='navigation'>
+			<div class='container'>
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header col-md-3">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#navbar">
-						<span class="sr-only">Toggle navigation</span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
+				<div class='navbar-header col-md-3'>
+					<button class='navbar-toggle' data-target='#navbar' data-toggle='collapse' type='button'>
+						<span class='sr-only'>Toggle navigation</span> <span class='icon-bar'/> <span class='icon-bar'/> <span class='icon-bar'/>
 					</button>
-					<a class="navbar-brand" href="#home"><i class="fa fa-leaf"></i>
+					<a class='navbar-brand' href='#home'><i class='fa fa-leaf'/>
 						9xM</a>
 				</div>
 
-				<div class="collapse navbar-collapse" id="navbar">
-					<ul class="nav navbar-nav col-md-9 pull-right">
-						<li class="active"><a href="#hero-area"><i
-								class="fa fa-home"></i> Home</a></li>
-						<li><a href="#services"><i class="fa fa-cogs"></i>
+				<div class='collapse navbar-collapse' id='navbar'>
+					<ul class='nav navbar-nav col-md-9 pull-right'>
+						<li class='active'><a href='#hero-area'><i class='fa fa-home'/> Home</a></li>
+						<li><a href='#services'><i class='fa fa-cogs'/>
 								Services</a></li>
-						<li><a href="#portfolio"><i class="fa fa-flask"></i>
+						<li><a href='#portfolio'><i class='fa fa-flask'/>
 								Portfolio</a></li>
-						<li><a href="#clients"><i class="fa fa-puzzle-piece"></i>
+						<li><a href='#clients'><i class='fa fa-puzzle-piece'/>
 								Clients</a></li>
-						<li><a href="#about"><i class="fa fa-info"></i> About</a></li>
-						<li><a href="#contact"><i class="fa fa-envelope"></i>
+						<li><a href='#about'><i class='fa fa-info'/> About</a></li>
+						<li><a href='#contact'><i class='fa fa-envelope'/>
 								Contact</a></li>
 					</ul>
 				</div>
@@ -384,25 +371,22 @@ a:hover {
 
 	<!-- Hero Area Section -->
 
-	<section id="hero-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="title">9xM - Group of premier software developer</h1>
-					<h2 class="subtitle">Boost your business logic 9xM times!</h2>
+	<section id='hero-area'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-md-12'>
+					<h1 class='title'>9xM - Group of premier software developer</h1>
+					<h2 class='subtitle'>Boost your business logic 9xM times!</h2>
 
-					<img class="col-md-6 col-sm-6 col-xs-12 animated fadeInLeft"
-						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/macbook.png" alt="" />
-					<div
-						class="col-md-6 col-sm-6 col-xs-12 animated fadeInRight delay-0-5">
+					<img alt='' class='col-md-6 col-sm-6 col-xs-12 animated fadeInLeft' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/macbook.png'/>
+					<div class='col-md-6 col-sm-6 col-xs-12 animated fadeInRight delay-0-5'>
 						<p>9xM is a premier software developer group offers software
 							and web development work on a number of newer and popular
 							platforms. Our goal is to ensure 100% client satisfaction by
 							offering innovative, reliable, robust and scalable IT solutions
 							with end-to-end customization. We extend better performing
 							technical solutions to ensure your success.</p>
-						<a href="#" class="btn btn-common btn-lg"><i
-							class="fa fa-flask"></i> Donload Now Portfolio</a>
+						<a class='btn btn-common btn-lg' href='#'><i class='fa fa-flask'/> Donload Now Portfolio</a>
 					</div>
 
 				</div>
@@ -417,15 +401,15 @@ a:hover {
 
 	<!-- Service Section -->
 
-	<section id="services">
-		<div class="container text-center">
-			<div class="row">
-				<h1 class="title">What we do</h1>
-				<h2 class="subtitle">Our Speciality Lies in Building Unique</h2>
+	<section id='services'>
+		<div class='container text-center'>
+			<div class='row'>
+				<h1 class='title'>What we do</h1>
+				<h2 class='subtitle'>Our Speciality Lies in Building Unique</h2>
 
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="service-item">
-						<img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/responsive.png" alt="" />
+				<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+					<div class='service-item'>
+						<img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/responsive.png'/>
 						<h3>WordPress Development</h3>
 						<p>WordPress is a unique platform that can be easily altered
 							for any need and requirements. You can anticipate premier quality
@@ -434,9 +418,9 @@ a:hover {
 				</div>
 
 
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="service-item">
-						<img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/bs3.png" alt="" />
+				<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+					<div class='service-item'>
+						<img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/bs3.png'/>
 						<h3>Plugin Development</h3>
 						<p>Plugin developers are highly innovative and armed with the
 							latest technology and trends and ensure you to execute all these
@@ -444,9 +428,9 @@ a:hover {
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="service-item">
-						<img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/free.png" alt="" />
+				<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+					<div class='service-item'>
+						<img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/free.png'/>
 						<h3>100% Free Support</h3>
 						<p>We offer free 60 days extended support on Wordpress Themes
 							&amp; Plugins also provide help doc of WordPress administrator
@@ -463,82 +447,73 @@ a:hover {
 
 	<!-- Portfolio Section -->
 
-	<section id="portfolio">
-		<div class="container">
-			<div class="row">
-				<h1 class="title">Portfolio</h1>
-				<h2 class="subtitle">Collection of 9xM highway</h2>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.jpg" alt="" /></a>
-						<div class="overlay">
-							<div class="icons">
-								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.jpg"
-									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+	<section id='portfolio'>
+		<div class='container'>
+			<div class='row'>
+				<h1 class='title'>Portfolio</h1>
+				<h2 class='subtitle'>Collection of 9xM highway</h2>
+				<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
+					<div class='portfolio-item wow fadeInLeft' data-wow-delay='.5s'>
+						<a href='#'><img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.jpg'/></a>
+						<div class='overlay'>
+							<div class='icons'>
+								<a class='preview' data-lightbox='image1' href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.jpg'><i class='fa fa-search-plus fa-4x'/></a>
 							</div>
 						</div>
 					</div>
 				</div>
 
 
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="portfolio-item wow fadeInLeft" data-wow-delay=".7s">
-						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.jpg" alt="" /></a>
-						<div class="overlay">
-							<div class="icons">
-								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.jpg"
-									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+				<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
+					<div class='portfolio-item wow fadeInLeft' data-wow-delay='.7s'>
+						<a href='#'><img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.jpg'/></a>
+						<div class='overlay'>
+							<div class='icons'>
+								<a class='preview' data-lightbox='image1' href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.jpg'><i class='fa fa-search-plus fa-4x'/></a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="portfolio-item wow fadeInLeft" data-wow-delay=".9s">
-						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img3.jpg" alt="" /></a>
-						<div class="overlay">
-							<div class="icons">
-								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images//img3.jpg"
-									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+				<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
+					<div class='portfolio-item wow fadeInLeft' data-wow-delay='.9s'>
+						<a href='#'><img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img3.jpg'/></a>
+						<div class='overlay'>
+							<div class='icons'>
+								<a class='preview' data-lightbox='image1' href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images//img3.jpg'><i class='fa fa-search-plus fa-4x'/></a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight"
-					data-wow-delay="1.1s">
-					<div class="portfolio-item">
-						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img4.jpg" alt="" /></a>
-						<div class="overlay">
-							<div class="icons">
-								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img4.jpg"
-									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+				<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight' data-wow-delay='1.1s'>
+					<div class='portfolio-item'>
+						<a href='#'><img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img4.jpg'/></a>
+						<div class='overlay'>
+							<div class='icons'>
+								<a class='preview' data-lightbox='image1' href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img4.jpg'><i class='fa fa-search-plus fa-4x'/></a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight"
-					data-wow-delay="1.3s">
-					<div class="portfolio-item">
-						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img5.jpg" alt="" /></a>
-						<div class="overlay">
-							<div class="icons">
-								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img5.jpg"
-									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+				<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight' data-wow-delay='1.3s'>
+					<div class='portfolio-item'>
+						<a href='#'><img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img5.jpg'/></a>
+						<div class='overlay'>
+							<div class='icons'>
+								<a class='preview' data-lightbox='image1' href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img5.jpg'><i class='fa fa-search-plus fa-4x'/></a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight"
-					data-wow-delay="1.5s">
-					<div class="portfolio-item">
-						<a href="#"><img src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img6.jpg" alt="" /></a>
-						<div class="overlay">
-							<div class="icons">
-								<a data-lightbox="image1" href="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img6.jpg"
-									class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+				<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight' data-wow-delay='1.5s'>
+					<div class='portfolio-item'>
+						<a href='#'><img alt='' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img6.jpg'/></a>
+						<div class='overlay'>
+							<div class='icons'>
+								<a class='preview' data-lightbox='image1' href='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img6.jpg'><i class='fa fa-search-plus fa-4x'/></a>
 							</div>
 						</div>
 					</div>
@@ -551,22 +526,15 @@ a:hover {
 
 
 	<!-- Client Section -->
-	<section id="clients">
-		<div class="container">
-			<div class="row">
+	<section id='clients'>
+		<div class='container'>
+			<div class='row'>
 
-				<h1 class="title">Clients</h1>
-				<h2 class="subtitle">Our rich experience with gold client</h2>
+				<h1 class='title'>Clients</h1>
+				<h2 class='subtitle'>Our rich experience with gold client</h2>
 
-				<div class="wow fadeInDown">
-					<img class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.png" alt="client-1" /><img
-						class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.png" alt="client-2" /><img
-						class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img3.png" alt="client-3" /><img
-						class="col-md-3 col-md-3 col-sm-3 col-xs-12"
-						src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/img/clients/img4.png" alt="client-4" />
+				<div class='wow fadeInDown'>
+					<img alt='client-1' class='col-md-3 col-md-3 col-sm-3 col-xs-12' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img1.png'/><img alt='client-2' class='col-md-3 col-md-3 col-sm-3 col-xs-12' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img2.png'/><img alt='client-3' class='col-md-3 col-md-3 col-sm-3 col-xs-12' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img3.png'/><img alt='client-4' class='col-md-3 col-md-3 col-sm-3 col-xs-12' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/img4.png'/>
 				</div>
 			</div>
 		</div>
@@ -577,13 +545,13 @@ a:hover {
 
 	<!-- About Section -->
 
-	<section id="about">
-		<div class="container">
-			<div class="row">
-				<h1 class="title">About us</h1>
-				<h2 class="subtitle">We support slience is gold</h2>
+	<section id='about'>
+		<div class='container'>
+			<div class='row'>
+				<h1 class='title'>About us</h1>
+				<h2 class='subtitle'>We support slience is gold</h2>
 
-				<div class="col-md-8 col-sm-12">
+				<div class='col-md-8 col-sm-12'>
 					<p>9xM is a premier software developer group. we have been
 						rendering a series of top of the line mobile-friendly web
 						development services that help the businesses to grow in digital
@@ -595,8 +563,7 @@ a:hover {
 						provide offer the anticipated results and more.</p>
 				</div>
 
-				<img class="col-md-4 col-md-4 col-sm-12 col-xs-12"
-					src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/graph.png" alt="" />
+				<img alt='' class='col-md-4 col-md-4 col-sm-12 col-xs-12' src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/images/graph.png'/>
 			</div>
 		</div>
 	</section>
@@ -605,26 +572,24 @@ a:hover {
 
 
 	<!-- Conatct Section -->
-	<section id="contact">
-		<div class="container text-center">
-			<div class="row">
-				<h1 class="title">Contact us</h1>
+	<section id='contact'>
+		<div class='container text-center'>
+			<div class='row'>
+				<h1 class='title'>Contact us</h1>
 
-				<h2 class="subtitle"> We stand head and shoulders above the rest</h2>
+				<h2 class='subtitle'> We stand head and shoulders above the rest</h2>
 
 
-				<form role="form" class="contact-form" method="post">
-					<div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
-						<div class="form-group">
-							<div class="controls">
-								<input type="text" class="form-control" placeholder="Name"
-									name="name" />
+				<!--form class='contact-form' method='get' role='form'>
+					<div class='col-md-6 wow fadeInLeft' data-wow-delay='.5s'>
+						<div class='form-group'>
+							<div class='controls'>
+								<input class='form-control' name='name' placeholder='Name' type='text'/>
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="controls">
-								<input type="email" class="form-control email"
-									placeholder="Email" name="email" />
+						<div class='form-group'>
+							<div class='controls'>
+								<input class='form-control email' name='email' placeholder='Email' type='email'/>
 							</div>
 						</div>
 						<div class="form-group">
@@ -634,32 +599,28 @@ a:hover {
 							</div>
 						</div>
 
-						<div class="form-group">
+						<div class='form-group'>
 
-							<div class="controls">
-								<textarea rows="7" class="form-control" placeholder="Message"
-									name="message"></textarea>
+							<div class='controls'>
+								<textarea class='form-control' name='email-message' placeholder='Message' rows='7'/>
 							</div>
 						</div>
-						<button type="submit" id="submit" class="btn btn-lg btn-common">Send</button>
-						<div id="success" style="color: #34495e;"></div>
+                      <input class='btn btn-lg btn-common' id='submit' type='submit' value='Send'/>
+						<div id='success' style='color: #34495e;'/>
 
 					</div>
-				</form>
+				</form-->
 
-				<div class="col-md-6 wow fadeInRight">
-					<div class="social-links">
-						<a class="social" href="#" target="_blank"><i
-							class="fa fa-facebook fa-2x"></i></a> <a class="social" href="#"
-							target="_blank"><i class="fa fa-twitter fa-2x"></i></a> <a
-							class="social" href="#" target="_blank"><i
-							class="fa fa-google-plus fa-2x"></i></a> <a class="social" href="#"
-							target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-					</div>
-					<div class="contact-info">
+				<div class='col-md-12 '>
+					<!--div class='social-links'>
+						<a class='social' href='#' target='_blank'><i class='fa fa-facebook fa-2x'/></a> <a class='social' href='#' target='_blank'><i class='fa fa-twitter fa-2x'/></a> <a class='social' href='#' target='_blank'><i class='fa fa-google-plus fa-2x'/></a> <a class='social' href='#' target='_blank'><i class='fa fa-linkedin fa-2x'/></a>
+					</div-->
+					<div class='contact-info'>
 						<p>
-							<i class="fa fa-map-marker"></i> B-149, Sector -63, Noida, India 
+							<i class='fa fa-map-marker'/> B-149, Sector -63, Noida, India 
 						</p>
+						<p>
+                          <i class='fa fa-envelope-o'/> <a href="mailto:9xm.tech@gmail.com">9xm.tech@gmail.com</a></p>
 					</div>
 
 
@@ -672,33 +633,31 @@ a:hover {
 	<!-- Conatct Section End-->
 
 
-	<div id="copyright">
-		<div class="container">
-			<div class="col-md-10">
+	<div id='copyright'>
+		<div class='container'>
+			<div class='col-md-10'>
 				<p>
-					© 9xM 2010 - 2016, Design and Developed by <a
-						href="http://9xmtech.blogspot.in">9xM</a>
+					&#169; 9xM 2010 - 2016, Design and Developed by <a href='http://9xmtech.blogspot.in'>9xM</a>
 				</p>
 			</div>
-			<div class="col-md-2">
-				<span class="to-top pull-right"><a href="#hero-area"><i
-						class="fa fa-angle-up fa-2x"></i></a></span>
+			<div class='col-md-2'>
+				<span class='to-top pull-right'><a href='#hero-area'><i class='fa fa-angle-up fa-2x'/></a></span>
 			</div>
 		</div>
 	</div>
 	<!-- Copyright Section End-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'/>
 <!-- Latest compiled and minified JavaScript -->
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'/>
 	<!-- Smooth Scroll -->
 	<!-- Smooth Scroll -->
-	<script src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/smooth-scroll.js"></script>
-	<script src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/lightbox.min.js"></script>
+	<script src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/smooth-scroll.js'/>
+	<script src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/lightbox.min.js'/>
 
 	<!-- All JS plugin Triggers -->
-	<script src="https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/main.js"></script>
+	<script src='https://raw.githubusercontent.com/9xm/blogger/master/9xmtech/assets/js/main.js'/>
 
 
 
