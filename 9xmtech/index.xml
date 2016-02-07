@@ -19,7 +19,7 @@
 
 <!-- Bootstrap Core CSS -->
 <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'/>
-<link href='http://fonts.googleapis.com/css?family=family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
 
 
 <!-- Custom Fonts -->
@@ -620,7 +620,7 @@ a:hover {
 							<i class='fa fa-map-marker'/> B-149, Sector -63, Noida, India 
 						</p>
 						<p>
-                          <i class='fa fa-envelope-o'/> <a href="mailto:9xm.tech@gmail.com">9xm.tech@gmail.com</a></p>
+                          <i class='fa fa-envelope-o'/> <a href='mailto:9xm.tech@gmail.com'>9xm.tech@gmail.com</a></p>
 					</div>
 
 
